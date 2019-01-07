@@ -1,0 +1,8 @@
+
+Nsquid:S1481"0Remove this unused "projectView" local variable.(ÁİÈ¾8ö¢É-
+]squid:S1854"?Remove this useless assignment to local variable "projectView".(ÁİÈ¾8ö¢É-
+~squid:UselessImportCheck
+"NRemove this unused import 'com.intellij.projectView.TestProjectTreeStructure'.(öÃ»²øÿÿÿÿ8†‘–É-
+squid:UselessImportCheck"ORemove this unused import 'com.intellij.openapi.actionSystem.PlatformDataKeys'.(ğ¡´”úÿÿÿÿ8œÕ“É-
+1squid:S1220""Move this file to a named package.
+‰squid:UselessImportCheck"YRemove this unused import 'com.intellij.ide.projectView.impl.AbstractProjectViewPSIPane'.(øˆƒÊÿÿÿÿÿ8ãäôÉ-
