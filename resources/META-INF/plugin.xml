@@ -36,4 +36,6 @@
         </action>
     </actions>
 
+    <depends>org.jetbrains.idea.maven</depends>
+
 </idea-plugin>

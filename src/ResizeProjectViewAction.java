@@ -6,6 +6,7 @@ import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.wm.ToolWindowManager;
 import com.intellij.openapi.wm.ex.ToolWindowEx;
+import org.jetbrains.idea.maven.project.MavenProjectsManager;
 
 import javax.swing.*;
 
@@ -37,10 +38,19 @@ public class ResizeProjectViewAction extends AnAction {
     
         ResizerUtil.longestPathValueOfTree(jTree);
     
-        // TODO: 10.01.19  
-        //org.jetbrains.idea.maven.project.MavenProjct;
+        // TODO: 10.01.19
+        //new org.jetbrains.idea.maven.project.MavenProject();
+        //
     
-        //MavenProjectsManager projectsManager = MavenProjectsManager.getInstance(project);
+        mavenStrategy(project);
+    }
+    
+    void mavenStrategy(Project project) {
+        MavenProjectsManager projectsManager = MavenProjectsManager.getInstance(project);
+    
+        projectsManager.getProjects()
+                       .get(0);
+        
     }
     
 }

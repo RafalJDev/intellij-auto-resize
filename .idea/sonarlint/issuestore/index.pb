@@ -7,5 +7,6 @@ K
 tool-window-auto-resize.iml,b/c/bcd54df140bfbb4d1891c9bb1b30f2a1b36770a8
 M
 resources/META-INF/plugin.xml,9/1/916c178f3f2e3f9c290ddc27914107cdb9b953e9
-L
-src/ProjectViewGetter.groovy,9/2/92797a2a988aa99870b4a53bda674458e1308504
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
