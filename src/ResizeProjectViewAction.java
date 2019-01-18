@@ -6,7 +6,7 @@ import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.wm.ToolWindowManager;
 import com.intellij.openapi.wm.ex.ToolWindowEx;
-import org.jetbrains.idea.maven.project.MavenProjectsManager;
+import org.jetbrains.idea.maven.navigator.MavenProjectsNavigator;
 
 import javax.swing.*;
 
@@ -46,11 +46,23 @@ public class ResizeProjectViewAction extends AnAction {
     }
     
     void mavenStrategy(Project project) {
-        MavenProjectsManager projectsManager = MavenProjectsManager.getInstance(project);
+        //MavenProjectsManager projectsManager = MavenProjectsManager.getInstance(project);
+        //
+        //projectsManager.getProjects()
+        //               .get(0);
     
-        projectsManager.getProjects()
-                       .get(0);
-        
+        MavenProjectsNavigator instance = MavenProjectsNavigator.getInstance(project);
+    
+        instance.getStructureForTests()
+                .getRootElement()
+                .getProjectNodesInTests();
+    
+        instance.getStructureForTests()
+                .getRootElement()
+                .getProjectNodesInTests()
+                .get(0);
+    
+        instance.getStructureForTests();
     }
     
 }
